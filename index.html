@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>Lila Skin – Coming Soon</title>
+  <style>
+    html, body {
+      font-family: 'Helvetica Neue', sans-serif;
+			background: linear-gradient(135deg, #fdf8f3 0%, #f7eefc 40%, #f3e5f5 100%);
+      background-color: #fdf8f3; /* light cream */
+      color: #4a3f55;
+      margin: 0;
+      padding: 0;
+			height: 100%;
+      text-align: center;
+    }
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+			animation: fadeIn 1.2s ease-in-out;
+    }
+    h1 {
+      font-size: 2em;
+      color: #7a5c94; /* soft lavender */
+    }
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(20px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+    p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+    input[type="email"] {
+      width: 90%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: #a98ac3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    button:hover {
+      background-color: #9573b2;
+    }
+    .tagline {
+      margin-top: 30px;
+      font-style: italic;
+      color: #a98ac3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lila Skin</h1>
+		<h2>Coming Soon</h2>
+    <p>
+      Skincare that loves every kind of lip.<br>
+      We’re creating nourishing, elegant skincare products — thoughtfully designed and never compromising.
+    </p>
+    <p>Be the first to hear when we launch:</p>
+    
+    <form action="https://formsubmit.co/0946b4931226dd6c8358c806218bf1e3" method="POST">
+      <input type="email" name="email" placeholder="Your email" required>
+      <button type="submit">Notify Me</button>
+      
+      <!-- optional features -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New sign-up for Lila">
+      <input type="hidden" name="_next" value="https://lovelilaskin/thank-you.html">
+    </form>
+
+    <div class="tagline">Love, Lila</div>
+  </div>
+</body>
+</html>
